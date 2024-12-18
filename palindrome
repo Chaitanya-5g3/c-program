@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+  int num, I, s, r, rev=0;
+  printf("entet a digit");
+  scanf("%d",&num);
+  s=num;
+  while(num>0)
+    {
+      r=num%10;
+      rev=rev*10+r;
+      num=num/10;
+      
+    }
+    if(rev==s)
+   {
+     printf("palindrome");
+   }
+   else
+   {
+     printf("not palindrome");
+   }
+ 
+  return 0;
+}
