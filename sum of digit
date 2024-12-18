@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  int num, I, sum=0, r;
+  printf("entet a digit");
+  scanf("%d",&num);
+  while(num>0)
+    {
+      r=num%10;
+      sum=sum+r;
+      num=num/10;
+    }
+    printf("the of digit is %d",sum);
+  return 0;
+}
