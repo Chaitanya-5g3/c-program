@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+//Compiler version gcc  6.3.0
+
+int main()
+{
+  int num, arm=0, r, s;
+  printf("entet a digit");
+  scanf("%d",&num);
+  s=num;
+  while(num>0)
+    {
+      r=num%10;
+      arm=arm+(r*r*r);
+      num=num/10;
+      
+    }
+    printf("%d",arm);
+    if(arm==s)
+    {
+      printf("Armstrong");
+    }
+    else
+    {
+      printf("not a Armstrong");
+    }
+   
+  return 0;
+}
