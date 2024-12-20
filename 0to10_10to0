@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+  int n1=10, I=-1, n2=11;
+  while(I<n1)
+   {
+     I=I+1;
+   
+   printf("%d\n",I);
+  }
+  while (n2>0)
+  {
+    n2=n2-1;
+    printf("%d",n2);
+  }
+  return 0;
+}
