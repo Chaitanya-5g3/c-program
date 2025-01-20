@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+  int a[10], i, n,j, newValue;
+  printf("enter the size");
+  scanf("%d",&n);
+  printf("enter the array elements");
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  printf("Enter the new value:");
+  scanf("%d",&newValue);
+  i=n-1;
+  while(i>=0 && a[i]>newValue)
+  {
+    a[i+1]=a[i];
+    i--; 
+  }
+  a[i+1]=newValue;
+  n++;
+  
+  for(i=0;i<n;i++)
+  {
+    printf("%d \t",a[i]);
+  }
+  }
