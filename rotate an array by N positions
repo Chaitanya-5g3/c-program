@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+ {
+    int arr[100], n, i, pos, b[100],j=0;
+
+    
+    printf("Enter the size of  array: ");
+    scanf("%d", &n);
+
+    
+    printf("Enter the sorted array elements:\n");
+    for (i = 0; i < n; i++)
+     {
+        scanf("%d", &arr[i]);
+     }
+    printf("Enter the position: ");
+    scanf("%d", &pos);
+    
+    
+    for(i = 0; i < n; i++)
+    {
+       pos=pos%n;
+       b[i]=arr[pos];
+       pos++;
+      
+    }
+    for(i=0;i<n;i++)
+     {
+       printf("%d\t",b[i]);
+     }
+  }
