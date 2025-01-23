@@ -1,0 +1,24 @@
+#include <stdio.h>
+void main()
+{
+  char str[50];
+  int i, l=0,temp, j;
+  scanf("%s",str);
+  l=strlen(str);
+  for(i=0;i<l;i++)
+  {
+    for(j=i+1;j<l;j++)
+    {
+      if(str[i]>str[j])
+      {
+        temp=str[i];
+        str[i]=str[j];
+        str[j]=temp;
+      }
+    }
+  }
+  for(i=0;i<l;i++)
+  {
+    printf("%c",str[i]);
+  }
+ }
