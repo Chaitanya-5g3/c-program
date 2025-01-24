@@ -1,0 +1,20 @@
+#include <stdio.h>
+void main()
+{
+  char str1[50], str2[50], str3[50];
+  scanf("%s",str1);
+  scanf("%s",str2);
+  scanf("%s",str3);
+  printf("%d\n",strlen(str1));
+  printf("%s\n",strcpy(str1,str2));
+  if(str3==str1)
+ 
+  {
+    printf(" equal");
+  }
+  else
+  {
+    printf("not equal");
+  }
+  
+}
